@@ -21,11 +21,11 @@ allButtons.forEach(button => {
 // Clear button will run clearScreen function when its clicked
 clearButton.addEventListener('click', clearScreen)
 // Equals button
-equalsButton.addEventListener('click', calculateResult);
+equalsButton.addEventListener('click', calculateAnswer);
 
 
 
-function calculateResult() {
+function calculateAnswer() {
       const whatsShowing = screenOutput.innerText;
       if (whatsShowing.includes('=')) {
         let result = eval(whatsShowing.replace('=', ''));
